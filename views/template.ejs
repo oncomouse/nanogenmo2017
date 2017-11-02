@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>
+		<%= metadata.title %>
+	</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cutestrap/1.3.1/css/cutestrap.min.css" />
+</head>
+<body>
+	<div class="wrapper-small">
+		<h1 class="page-title">
+			<%= metadata.title %>
+		</h1>
+		<p>
+			<%- metadata.description %>
+		</p>
+	</div>
+	<div class="wrapper-small">
+		<div id="story" class="tracery fw-semibold fs-large"></div>
+		<form>
+			<label for="numberOfStories" class="textfield">
+				<input type="number" id="numberOfStories" value="1">
+				<span class="textfield__label">Number of Stories to Generate:</span>
+			</label>
+			<div class="ta-center">
+				<input type="button" value="Create a New Story" id="newStory" class="btn">
+			</div>
+		</form>
+	</div>
+  <!-- Your Grammar Goes in the <script> tag below: -->
+	<script id="grammar" type="application/json">
+	 <%- JSON.stringify(grammar) %>
+	</script>
+	<script src="/js/ramda.min.js"></script>
+	<script src="/js/tracery.min.js"></script>
+	<script src="/js/controls.min.js"></script>
+</body>
+</html>
