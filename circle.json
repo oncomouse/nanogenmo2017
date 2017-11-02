@@ -15,7 +15,9 @@
 		"#title#\n\n#zone-of-comfort#\n\n#want-something#\n\n#unfamiliar-situation#\n\n#adapt#\n\n#get-something#\n\n#pay-a-price#\n\n#return#\n\n#change#\n\nThe End"
 	],
 	"title": [
-		"#hero#'s Quest for More #something-item.s.capitalize#"
+		"#hero#'s Quest for More #something-item.s.capitalize#",
+		"A Very Long Journey",
+		"The Journey for #something-item.capitalize#"
 	],
 	"zone-of-comfort": [
 		"Our story opens when #hero.capitalize# was young and living in #home#, #heroTheir# #town-description# #town# far from the big city of #place#. It was #time-period#.\n\n#hero-description#\n\n#blissful-early-scene#"
